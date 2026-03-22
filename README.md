@@ -1,5 +1,7 @@
 # miruns-link
 
+> **⚠️ Early Development** — This project is under active development and is **not production-ready**. APIs, schemas, and behaviour may change without notice.
+
 Ephemeral session sharing API. Devices create sessions identified by short unique codes. Anyone with the code can read the data; only the originating device can update or delete it.
 
 ## Quick start
