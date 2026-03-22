@@ -31,7 +31,9 @@ app.use("/sessions", sessionRoutes);
 // Start
 async function main() {
   await connectDB();
-  app.listen(PORT, () => console.log(`miruns-link listening on :${PORT}`));
+  app.listen(PORT, "0.0.0.0", () =>
+    console.log(`miruns-link listening on :${PORT}`),
+  );
 }
 
 main().catch((err) => {
