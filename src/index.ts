@@ -9,6 +9,9 @@ import sessionRoutes from "./routes/session.routes.js";
 const app = express();
 const PORT = parseInt(process.env.PORT || "3000", 10);
 
+// Trust the Fly.io reverse proxy so express-rate-limit sees real client IPs.
+app.set("trust proxy", 1);
+
 // Security & parsing
 app.use(helmet());
 app.use(cors());
